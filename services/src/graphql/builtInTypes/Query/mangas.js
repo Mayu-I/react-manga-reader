@@ -1,9 +1,6 @@
-import Manga from "#root/db/models/Manga";
+import Manga from "#root/db/models/manga.js"
 
 const mangasResolver = () => {
-    Manga.find({}).then(stuff => {
-        console.log(stuff);
-    })
     return [
         {
             id: "1",
@@ -14,8 +11,8 @@ const mangasResolver = () => {
             id: "2",
             image: "kitten2.jpg",
             title: "Two Piece"
-        },
-    ];
-};
+        }
+    ]
+}
 
-export default mangasResolver;
+export default mangasResolver

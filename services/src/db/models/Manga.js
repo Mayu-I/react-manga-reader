@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-export const schema = new mongoose.Schema({
+export const mongooseSchema = new mongoose.Schema({
     alias: String,
     categories: [String],
     hits: Number,
@@ -10,6 +10,6 @@ export const schema = new mongoose.Schema({
     title: String
 });
 
-const Manga = mongoose.model("Manga", schema);
+const Manga = mongoose.model("Manga", mongooseSchema);
 
 export default Manga;

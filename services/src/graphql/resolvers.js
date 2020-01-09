@@ -1,10 +1,7 @@
 import * as Query from "./builtInTypes/Query";
 
 const resolvers = {
-    Query,
-    Manga: {
-        id: mangaObj => mangaObj._id
-    }
+    Query
 };
 
 export default resolvers;
