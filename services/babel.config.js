@@ -7,7 +7,8 @@ module.exports = {
                 alias: {
                     "#root": "./src"
                 }
-            }
-        ]
+            },
+        ],
+        "@babel/plugin-transform-runtime"
     ]
 };
