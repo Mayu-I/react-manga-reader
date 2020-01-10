@@ -10,7 +10,7 @@ type Manga {
     title: String!
 }
 type Query {
-    mangas: [Manga!]!
+    mangas: [Manga]!
 }
 `;
 

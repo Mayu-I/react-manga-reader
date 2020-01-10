@@ -1,20 +1,10 @@
-import Manga from "#root/db/models/Manga"
+import Manga from "#root/db/models/Manga.js"
 
 const mangasResolver = () => {
-    return Manga.find({});
-    // return Manga.find({});
-    // return [
-    //     {
-    //         id: "1",
-    //         image: "kitten.jpg",
-    //         title: "One Piece"
-    //     },
-    //     {
-    //         id: "2",
-    //         image: "kitten2.jpg",
-    //         title: "Two Piece"
-    //     }
-    // ]
+    // return Manga.find({}).sort({ lastUpdated: -1 });
+    Manga.find({}).then(stuff => {
+        console.log(stuff);
+    });
 };
 
 export default mangasResolver;
